@@ -1,0 +1,22 @@
+[
+    {
+        "protocol": "local",
+        "password": "123456",
+        "user": 1
+    },
+    {
+      "protocol": "local",
+      "password": "123456",
+      "user": 2
+    },
+	  {
+		"protocol": "local",
+		"password": "123456",
+		"user": 3
+	  },
+	  {
+		"protocol": "local",
+		"password": "123456",
+		"user": 4
+	  }
+]

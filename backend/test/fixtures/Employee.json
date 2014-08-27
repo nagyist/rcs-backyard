@@ -1,0 +1,38 @@
+[
+    {
+        "personalEmail": "john@hotmail.com",
+        "name": "John Silver",
+        "position": 1,
+        "region": 2,
+        "admissionDate": "2012-01-01",
+        "birthDate": "1978-08-20",
+		"user": 1
+    },
+    {
+      "personalEmail": "",
+      "name": "Maria Gold",
+      "position": 1,
+      "region": 1,
+      "admissionDate": "2012-01-01",
+      "birthDate": "1970-08-20",
+      "user": 2
+    },
+    {
+      "personalEmail": "joaquim@globo.com",
+      "name": "Joaquim Bronze",
+      "position": 2,
+      "region": 3,
+      "admissionDate": "2014-08-18",
+      "birthDate": "1990-02-25",
+      "user": 3
+    },
+    {
+      "personalEmail": "",
+      "name": "Valeria Can",
+      "position": 2,
+      "region": 2,
+      "admissionDate": "2014-08-11",
+      "birthDate": "1980-01-01",
+      "user": 4
+    }
+]
