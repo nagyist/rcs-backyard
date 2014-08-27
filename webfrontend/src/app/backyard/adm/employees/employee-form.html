@@ -1,0 +1,38 @@
+<h1>Cadastrar empregado</h1>
+<hr/>
+<form>
+  <div class="form-group">
+    <label class="control-label" for="employee-name">Nome completo:</label>
+    <input type="text" id="employee-name" ng-model="employee.name" />
+  </div>
+  <div class="form-group">
+    <label class="control-label" for="employee-personal-email">Email pessoal:</label>
+    <input type="email" id="employee-personal-email" ng-model="employee.personalEmail" />
+  </div>
+  <div class="form-group">
+    <label class="control-label" for="employee-name">Data de nascimento:</label>
+    <input type="date" id="employee-birth-date" ng-model="employee.birthDate" />
+  </div>
+  <div class="form-group">
+    <label class="control-label" for="employee-name">Data de admissão:</label>
+    <input type="date" id="employee-admission-date" ng-model="employee.admissionDate" />
+  </div>
+  <div class="form-group">
+    <label class="control-label" for="employee-position">Cargo/Posição:</label>
+    <select id="employee-position" ng-model="employee.position">
+      <option>-- selecione --</option>
+      <option ng-repeat="position in positions"
+              value="{{position.id}}">{{position.name}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label class="control-label" for="employee-region">Região:</label>
+    <select id="employee-region" ng-model="employee.region">
+      <option>-- selecione --</option>
+      <option ng-repeat="region in regions"
+              value="{{region.id}}">{{region.name}}</option>
+    </select>
+  </div>
+
+  <input type="submit" value="Criar Empregado" />
+</form>

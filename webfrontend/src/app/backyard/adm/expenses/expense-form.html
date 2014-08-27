@@ -1,0 +1,66 @@
+<h3>Create Expense</h3>
+<hr/>
+
+<form role="form" ng-submit="createExpense()">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="expense-description">Description:</label>
+          <input type="text" id="expense-description" class="form-control" ng-model="expense.description" />
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" ng-model="expense.isAdvancedPayment"> Request advanced payment
+          </label>
+        </div>
+        <div class="form-group" ng-show="expense.isAdvancedPayment">
+          <label for="expense-desiredpaymentdate">Desired payment date:</label>
+          <input type="date" id="expense-desiredpaymentdate"
+                 class="form-control" ng-model="expense.desiredPaymentDate" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="expense-notes">Additional notes:</label>
+          <textarea id="expense-notes" rows="6"
+                    ng-model="expense.notes" class="form-control">
+          </textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table">
+        <tr>
+          <th width="20%">Number</th>
+          <th width="40%">Expense Type</th>
+          <th width="10%">Value</th>
+          <th width="20%">Date</th>
+          <th width="10%">Actions</th>
+        </tr>
+        <tr ng-repeat="item in expenseItems">
+          <td><input type="text" class="form-control" ng-model="item.number" /></td>
+          <td><input type="text" class="form-control" ng-model="item.type"
+                 typeahead="type.name for type in expenseTypes | filter:$viewValue | limitTo:8" /></td>
+          <td><input type="text" class="form-control" ng-model="item.value" /></td>
+          <td><input type="date" class="form-control" ng-model="item.date" /></td>
+          <td><a href="#{{$index}}" ng-click="removeItem($index)"><i class="fa fa-trash-o"></i></a></td>
+        </tr>
+      </table>
+      <button ng-click="addItem()">Add item</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <hr/>
+      <p>Total value: R$ {{sum(expenseItems)}}</p>
+      <input type="submit" value="Create Expense" />
+    </div>
+  </div>
+</form>
+
+

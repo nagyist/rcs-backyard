@@ -1,0 +1,54 @@
+<div data-ng-show="!employee">
+    <h3>Requested employee not found</h3>
+</div>
+
+<div data-ng-show="employee">
+    <div class="row">
+        <div class="col-md-8">
+            <h3>{{employee.name}}</h3>
+        </div>
+</div>
+  <div class="row">
+        <div class="col-md-4">
+            <h4 class="text-muted">Information</h4>
+            <table class="table">
+              <tr>
+                <th>Username</th>
+                <td>{{employee.user.username}}</td>
+              </tr>
+              <tr>
+                <th>Company Email</th>
+                <td>{{employee.user.email}}</td>
+              </tr>
+                <tr>
+                  <th>Personal Email</th>
+                  <td>{{employee.personalEmail}}</td>
+                </tr>
+                <tr>
+                    <th>Position</th>
+                    <td>{{employee.position.name}}</td>
+                </tr>
+                <tr>
+                  <th>Region</th>
+                  <td>{{employee.region.name}}</td>
+                </tr>
+                <tr>
+                    <th>Admission Date</th>
+                    <td>{{employee.admissionDate | amDateFormat: 'DD/MM/YYYY'}}</td>
+                </tr>
+              <tr>
+                <th>Birthdate</th>
+                <td>{{employee.birthDate | amDateFormat: 'DD/MM/YYYY'}}</td>
+              </tr>
+              <tr>
+                <th>Roles</th>
+                <td>
+                  <ul>
+                    <li ng-repeat="role in employee.user.roles">{{role.name}}</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+        </div>
+    </div>
+</div>

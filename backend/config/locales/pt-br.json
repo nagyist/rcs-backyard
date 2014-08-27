@@ -1,0 +1,6 @@
+{
+  "Error.Passport.Password.Wrong": "Oooops... O password digitado não está correto!",
+  "Error.Passport.Password.NotSet": "Oh não! Você ainda não atribuiu uma senha!",
+  "Error.Passport.Username.NotFound": "Hmmm... Qual é seu nome de usuário mesmo?",
+  "Error.Passport.Email.NotFound": "Aparentemente este e-mail não está correto."
+}
