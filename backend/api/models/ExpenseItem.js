@@ -14,23 +14,51 @@ module.exports = {
     // nf number
     number: {
       type:       'string',
-      required:   true
+      required:   false
     },
-    // notes
+    // nf value
     value: {
-      type:       'text',
+      type:       'float',
       required:   true
     },
     // nf date
     date: {
       type:       'date',
-      required:   false
+      required:   true
     },
 
     /* Below is all specification for relations to another models */
     // Solicitant employee
+    expense: {
+      model: 'Expense'
+    },
     type: {
-      model: 'ExpenseType'
+      model: 'ExpenseType',
+      required: true
     }
+  },
+
+  // Validate all objects
+  isValid: function(object) {
+    var items;
+
+    if(object instanceof Array) {
+      items = object;
+    } else {
+      items = []; items.push(object);
+    }
+
+    for(var i = 0; i < items.length; i++) {
+      var item = items[i];
+      if (!item.value || item.value < 1) {
+        return new Error('Min value is $ 1.00');
+      }
+
+      if (!item.date) {
+        return new Error('Date is obligatory');
+      }
+    }
+
+    return true;
   }
 };

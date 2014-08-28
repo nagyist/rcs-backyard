@@ -30,7 +30,7 @@
 <table class="table">
   <thead class="noSelect">
   <tr>
-    <th class="text-nowrap {{item.class}}"
+    <th class="text-nowrap {{item.class}}" width="{{item.width}}"
         data-ng-repeat="item in titleItems | filter:titleFilter"
       >
       <a
@@ -60,6 +60,7 @@
     </td>
     <td class="col-md-4">{{expense.createdAt | amDateFormat: 'DD/MM/YYYY'}}</td>
     <td class="col-md-2">{{expense.description}}</td>
+    <td class="col-md-2">$ {{expense.total}}</td>
     <td class="col-md-2">{{expense.previewPaymentDate | amDateFormat: 'DD/MM/YYYY'}}</td>
     <td class="col-md-2 text-right">{{expense.status}}</td>
   </tr>

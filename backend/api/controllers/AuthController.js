@@ -76,10 +76,11 @@ var AuthController = {
                 // If an error was thrown, redirect the user to the login which should
                 // take care of rendering the error messages.
                 if (error) {
-                    sails.log.error('User authentication failed');
+                    var errorMsg = 'User authentication failed, check your credentials or contact any administrators';
+                    sails.log.error(errorMsg);
                     sails.log.error(error);
 
-                    response.json(401, error);
+                    response.json(401, {error: errorMsg});
                 } else { // Upon successful login, send back user data and JWT token
                     sails.services['logger'].login(user, request);
 

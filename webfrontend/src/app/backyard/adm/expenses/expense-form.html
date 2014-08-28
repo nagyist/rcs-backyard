@@ -7,7 +7,8 @@
       <div class="col-md-6">
         <div class="form-group">
           <label for="expense-description">Description:</label>
-          <input type="text" id="expense-description" class="form-control" ng-model="expense.description" />
+          <input type="text" id="expense-description" class="form-control"
+                 required ng-model="expense.description" />
         </div>
         <div class="checkbox">
           <label>
@@ -43,22 +44,27 @@
         </tr>
         <tr ng-repeat="item in expenseItems">
           <td><input type="text" class="form-control" ng-model="item.number" /></td>
-          <td><input type="text" class="form-control" ng-model="item.type"
+          <td><input type="text" class="form-control" ng-model="item.type" required
                  typeahead="type.name for type in expenseTypes | filter:$viewValue | limitTo:8" /></td>
-          <td><input type="text" class="form-control" ng-model="item.value" /></td>
+          <td>
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" ng-model="item.value" required />
+            </div>
+          </td>
           <td><input type="date" class="form-control" ng-model="item.date" /></td>
           <td><a href="#{{$index}}" ng-click="removeItem($index)"><i class="fa fa-trash-o"></i></a></td>
         </tr>
       </table>
-      <button ng-click="addItem()">Add item</button>
+      <a href="#" class="btn btn-default" ng-click="addItem()">Add item</a>
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-12">
       <hr/>
-      <p>Total value: R$ {{sum(expenseItems)}}</p>
-      <input type="submit" value="Create Expense" />
+      <p>Total value: $ {{sum(expenseItems)}}</p>
+      <input type="submit" value="Create Expense" class="btn btn-warning" />
     </div>
   </div>
 </form>

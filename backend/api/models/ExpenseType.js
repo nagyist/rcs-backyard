@@ -15,6 +15,25 @@ module.exports = {
             type:       'string',
             required:   true
         }
+    },
+
+  isValid: function(object) {
+    var items;
+
+    if(object instanceof Array) {
+      items = object;
+    } else {
+      items = []; items.push(object);
     }
+
+    for(var i = 0; i < items.length; i++) {
+      var item = items[i];
+      if (!item.name) {
+        return new Error('Name of expense type is required');
+      }
+    };
+
+    return true;
+  }
 };
 

@@ -19,7 +19,7 @@ module.exports = {
     // notes
     notes: {
       type:       'text',
-      required:   true
+      required:   false
     },
     // Preview payment date
     desiredPaymentDate: {
@@ -47,6 +47,53 @@ module.exports = {
     // Solicitant employee
     employee: {
       model: 'employee'
+    },
+
+    items: {
+      collection: 'expenseitem',
+      via: 'expense'
+    },
+
+    /* Attr methods */
+    total: function() {
+      var query = 'SELECT sum(value) FROM expenseitem WHERE expense = %s;';
+      query.replace('%s', this.id);
+      console.log(query);
+      sails.models['expenseitem'].query(query, function(err, res) {
+        if (err) return err;
+        console.log(res);
+        return res;
+      });
     }
+  },
+
+
+  // Validate an expense or an array of expenses
+  isValid: function(object) {
+    var items;
+
+    if(object instanceof Array) {
+      items = object;
+    } else {
+      items = []; items.push(object);
+    }
+
+    for(var i = 0; i < items.length; i++) {
+      var item = items[i];
+      if (!item.description) {
+        return new Error('Description is obligatory');
+      }
+
+      if (item.isAdvancedPayment && !item.desiredPaymentDate) {
+        return new Error('Desired payment date is obligatory');
+      }
+
+      if (!item.status) {
+        return new Error('Status is obligatory');
+      }
+    }
+
+    return true;
   }
+
 };

@@ -18,6 +18,7 @@
   "globals": {
     "angular": false,
     "console": false,
-    "moment": false
+    "moment": false,
+    "_": false
   }
 }

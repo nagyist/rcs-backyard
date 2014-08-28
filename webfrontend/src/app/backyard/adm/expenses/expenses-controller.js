@@ -24,11 +24,12 @@
 
         // Initialize used title items
         $scope.titleItems = [
-          {title: 'Id', column: 'id'},
-          {title: 'Date', column: 'createdAt'},
-          {title: 'Description', column: 'description'},
-          {title: 'Payment Preview Date', column: 'previewPaymentDate'},
-          {title: 'Status', column: 'status', class:'text-right'}
+          {title: 'Id', column: 'id', width: '10%'},
+          {title: 'Date', column: 'createdAt', width: '15%'},
+          {title: 'Description', column: 'description', width: '25%'},
+          {title: 'Total', column: false, width: '20%'},
+          {title: 'Payment Preview Date', column: 'previewPaymentDate', width: '15%'},
+          {title: 'Status', column: 'status', class:'text-right', width: '15%'}
         ];
 
         // Initialize default sort data
@@ -36,8 +37,6 @@
           column: 'createdAt',
           direction: false
         };
-
-//        console.log($scope.user.id);
 
         DataService.getOne('employee', {where: {user: $scope.user.id}})
           .then(function(res){
@@ -88,15 +87,23 @@
             .get($scope.endPoint, parameters)
             .success(function(response) {
               $scope.items = response;
+              $scope.items.forEach(function(data) {
+                data.total = 0;
+
+                data.items.forEach(function(item) {
+                  data.total += item.value;
+                });
+
+              });
 
               $scope.loaded = true;
               $scope.loading = false;
             });
         };
 
-//        $scope.$watch('currentPage', function() {
-//          $scope.fetchData();
-//        });
+        $scope.$watch('currentPage', function() {
+          $scope.fetchData();
+        });
 
         // Help function for this controller
         $scope.showHelp = function() {

@@ -185,6 +185,11 @@
             templateUrl: '/frontend/backyard/adm/expenses/expense-form.html',
             controller: 'ExpenseController'
           })
+          .state('backyard.adm.expense', {
+            url: '/expenses/:id',
+            templateUrl: '/frontend/backyard/adm/expenses/expense.html',
+            controller: 'ExpenseViewController'
+          })
           .state('backyard.adm.documents', {
             url:'/documents',
             template: 'TO-DO: Modelos documentais'

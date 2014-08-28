@@ -90,7 +90,10 @@
                                 .post(BackendConfig.url + '/login', credentials, {withCredentials: true})
                                 .success(function(response) {
                                     Storage.set('auth_token', JSON.stringify(response));
-                                });
+                                })
+                              .error(function(err) {
+                                console.log(err);
+                              });
                         },
 
                         /**
