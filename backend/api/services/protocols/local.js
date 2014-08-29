@@ -79,6 +79,7 @@ exports.login = function(request, identifier, password, next) {
 
     sails.models['user']
         .findOne(query)
+        .populate('roles')
         .exec(function(error, user) {
             if (error) {
                 next(error);
@@ -98,7 +99,15 @@ exports.login = function(request, identifier, password, next) {
                                 } else if (!response) {
                                     next(null, false);
                                 } else {
-                                    next(null, user);
+                                    sails.models['employee'].findOne({user:user.id})
+                                      .populate('position')
+                                      .exec(function (err,res){
+                                          if(err) {
+                                            return next(err);
+                                          }
+                                          user.employee = res;
+                                          next(null, user);
+                                      });
                                 }
                             });
                         } else {

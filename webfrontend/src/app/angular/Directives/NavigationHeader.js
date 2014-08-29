@@ -12,7 +12,7 @@
             return {
                 restrict: 'E',
                 replace: true,
-                scope: {},
+                scope: true,
                 templateUrl: '/frontend/partials/Directives/NavigationHeader/header.html',
                 controller: [
                     '$scope', 'CurrentUser', 'Auth',
@@ -23,6 +23,10 @@
                         $scope.logout = function() {
                             Auth.logout();
                         };
+
+                        $scope.$on('LoginEvent', function() {
+                          $scope.user = CurrentUser.user();
+                        });
                     }
                 ]
             };

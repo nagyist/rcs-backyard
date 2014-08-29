@@ -104,6 +104,21 @@
           })
         ;
 
+        // System engine operations
+        $stateProvider
+          .state('system', {
+            abstract: true,
+            template: '<ui-view/>',
+            data: {
+              access: AccessLevels.user
+            }
+          })
+          .state('system.changePassword', {
+            url: '/user/changePassword',
+            templateUrl: '/frontend/system/password/password.html',
+            controller: 'PasswordController'
+          });
+
         // Routes that needs authenticated user
         $stateProvider
           .state('example', {

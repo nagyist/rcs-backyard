@@ -67,7 +67,6 @@
           $scope.loading = true;
 
           // Data query specified parameters
-          console.log($scope.employee.id);
           var parameters = {
             where: { employee: $scope.employee.id },
             limit: $scope.itemsPerPage,

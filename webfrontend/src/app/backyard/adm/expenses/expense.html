@@ -10,7 +10,7 @@
         </div>
         <div class="col-md-12" ng-show="expense.isAdvancedPayment">
           <p><strong>Requested advanced payment</strong></p>
-          <p>{{expense.desiredPaymentDate}}</p>
+          <p><strong>Desired payment date:</strong> {{expense.desiredPaymentDate | amDateFormat: 'DD/MM/YYYY'}}</p>
         </div>
       </div>
       <div class="col-md-6">
@@ -44,7 +44,7 @@
   <div class="row">
     <div class="col-md-12">
       <hr/>
-      <p>Total value: R$ {{sum(expense.items)}}</p>
+      <p>Total value: $ {{sum(expense.items)}}</p>
     </div>
   </div>
 

@@ -20,7 +20,7 @@ module.exports.passport = {
         strategy: require('passport-local').Strategy
     },
 
-    twitter: {
+    /*twitter: {
         name: 'Twitter',
         protocol: 'oauth',
         strategy: require('passport-twitter').Strategy,
@@ -54,5 +54,5 @@ module.exports.passport = {
         name: 'Google',
         protocol: 'openid',
         strategy: require('passport-google').Strategy
-    }
+    }*/
 };

@@ -35,8 +35,15 @@
                       <i class="fa fa-user"></i> {{user.username}} <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
-                      <li><a href="#" data-ui-sref="backyard.tools"><i class="fa fa-wrench"></i> Tools</a></li>
-                      <li><a href="#" data-ng-click="logout()"><i class="fa fa-user"></i> Logout</a></li>
+                      <li><a href="#" data-ui-sref="backyard.tools">
+                        <i class="fa fa-wrench"></i> Tools</a>
+                      </li>
+                      <li><a href="#" data-ui-sref="system.changePassword">
+                        <i class="fa fa-refresh"></i> Change Password</a>
+                      </li>
+                      <li><a href="#" data-ng-click="logout()">
+                        <i class="fa fa-user"></i> Logout</a>
+                      </li>
                     </ul>
 
                 </li>

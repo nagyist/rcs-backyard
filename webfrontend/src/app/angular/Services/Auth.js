@@ -48,7 +48,9 @@
         .factory('Auth',
             [
                 '$http', '$state', 'Storage', 'AccessLevels', 'BackendConfig',
-                function($http, $state, Storage, AccessLevels, BackendConfig) {
+                '$rootScope',
+                function($http, $state, Storage, AccessLevels, BackendConfig,
+                  $rootScope) {
                     return {
                         /**
                          * Method to authorize current user with given access level in application.
@@ -90,10 +92,8 @@
                                 .post(BackendConfig.url + '/login', credentials, {withCredentials: true})
                                 .success(function(response) {
                                     Storage.set('auth_token', JSON.stringify(response));
-                                })
-                              .error(function(err) {
-                                console.log(err);
-                              });
+                                    $rootScope.$broadcast('LoginEvent');
+                                });
                         },
 
                         /**
@@ -103,8 +103,8 @@
                          */
                         logout: function() {
                             Storage.unset('auth_token');
-
-                            $state.go('anon.login');
+                            $rootScope.user = null;
+                            $state.go('anon.intro');
                         }
                     };
                 }

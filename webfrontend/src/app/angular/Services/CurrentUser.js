@@ -29,16 +29,14 @@
     angular.module('frontend.services')
         .factory('CurrentUser',
             [
-                'Storage', 'DataService',
-                function(Storage, DataService) {
+                'Storage',
+                function(Storage) {
                     return {
                         user: function() {
                             if (Storage.get('auth_token')) {
-                                return angular.fromJson(Storage.get('auth_token')).user;
-//                                DataService.getOne('user',{id: user.id})
-//                                  .then( function(res) {
-//                                    return res;
-//                                  });
+                                return angular.fromJson(
+                                  Storage.get('auth_token'))
+                                  .user;
                             } else {
                                 return {};
                             }

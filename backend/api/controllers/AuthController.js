@@ -85,6 +85,20 @@ var AuthController = {
                     sails.services['logger'].login(user, request);
 
                     response.json(200, {user: user, token: sails.services['token'].issue(user.id)});
+
+                    // Retrieve user employee and roles
+                    // sails.models['employee'].findOne({where: {user: user.id}})
+                    //   .exec(function (err,res) {
+                    //   if(!err) {
+                    //     response.json(400,{error: 'User doesnt has employee? Contact system admin'});
+                    //   }
+                    //   console.log(user);
+                    //   user.employee = res;
+                    //   console.log(res);
+                    //   console.log(user);
+                    //   response.json(200, {user: user, token: sails.services['token'].issue(user.id)});
+                    // });
+
                 }
             });
         });

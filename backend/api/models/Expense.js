@@ -40,7 +40,7 @@ module.exports = {
     status: {
       type:       'string',
       required:   true,
-      enum: ['pending', 'approved', 'rejected']
+      enum: ['draft', 'pending', 'approved', 'rejected']
     },
 
     /* Below is all specification for relations to another models */
@@ -54,17 +54,6 @@ module.exports = {
       via: 'expense'
     },
 
-    /* Attr methods */
-    total: function() {
-      var query = 'SELECT sum(value) FROM expenseitem WHERE expense = %s;';
-      query.replace('%s', this.id);
-      console.log(query);
-      sails.models['expenseitem'].query(query, function(err, res) {
-        if (err) return err;
-        console.log(res);
-        return res;
-      });
-    }
   },
 
 

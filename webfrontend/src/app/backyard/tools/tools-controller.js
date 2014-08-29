@@ -7,9 +7,10 @@
     angular.module('frontend.backyard.tools')
         .controller('ToolsController',
             [
-                '$scope', '$modal',
-                function($scope, $modal) {
+                '$scope', '$modal', 'CurrentUser',
+                function($scope, $modal, CurrentUser) {
                     // Initialize data
+                    $scope.user = CurrentUser.user();
 
                     // Help function for this controller
                     $scope.showHelp = function() {
@@ -19,7 +20,7 @@
                             size: 'lg',
                             resolve: {
                                 title: function() {
-                                    return 'Information about "Employees" GUI';
+                                    return 'Information about "Tools page"';
                                 },
                                 section: function() {
                                     return 'backyard/tools';
