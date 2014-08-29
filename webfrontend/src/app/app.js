@@ -44,6 +44,7 @@
   ]);
   angular.module('frontend.backyard', [
     'frontend.backyard.tools',
+    'frontend.backyard.workflow',
     'frontend.backyard.adm.expenses',
     'frontend.backyard.adm.employees'
   ]);
@@ -175,6 +176,16 @@
             url: '/tools',
             templateUrl: '/frontend/backyard/tools/tools.html',
             controller: 'ToolsController'
+          })
+          .state('backyard.workflows', {
+            url: '/workflows',
+            templateUrl: '/frontend/backyard/workflow/workflows.html',
+            controller: 'WorkflowObjectsController'
+          })
+          .state('backyard.workflowCreate', {
+            url: '/workflow/create',
+            templateUrl: '/frontend/backyard/workflow/workflow-form.html',
+            controller: 'WorkflowObjectController'
           })
           .state('backyard.adm', {
             url: '/adm',

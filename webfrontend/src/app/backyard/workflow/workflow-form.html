@@ -1,0 +1,121 @@
+<h3>Create Workflow</h3>
+<hr/>
+
+<form role="form" ng-submit="createWorkflow()">
+  
+  <div class="row">
+    <div class="col-md-6">
+    <div class="form-group">
+      <label for="workflow-model">Model:</label>
+      <select id="workflow-model" ng-model="workflow.model" class="form-control">
+        <option ng-repeat="model in models" value="{{model}}" required>
+          {{model}}
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+        <label for="workflow-triggerStatus">Trigger status:</label>
+        <input type="text" class="form-control" ng-model="workflow.triggerStatus" required />
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="workflow.isActivated"> Is activated
+        </label>
+      </div>
+    </div> 
+
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="workflow-approverMessage">
+          Approver message (send to each approver of the workflow):
+        </label>
+        <textarea id="workflow-approverMessage" rows="6" required
+                  placeholder="Dear approver, You are choosed to approve this process. You can access the page below to approve or reject this process."
+                  ng-model="workflow.approverMessage" class="form-control">
+        </textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-4">
+      <div class="form-group">
+        <label for="workflow-startMessage">
+          Start message (send to initiator when the object is submited):
+        </label>
+        <textarea id="workflow-startMessage" rows="4" required
+                  placeholder="Dear user, your solicitation of expense was created and is awaiting for approval"
+                  ng-model="workflow.startMessage" class="form-control">
+        </textarea>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="workflow-approvedMessage">
+          Approved message (send to initiator when the object is approved):
+        </label>
+        <textarea id="workflow-approvedMessage" rows="4" required
+                  placeholder="Dear user, your solicitation of expense was approved!"
+                  ng-model="workflow.approvedMessage" class="form-control">
+        </textarea>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="workflow-rejectedMessage">
+          Rejected message (send to initiator when the object is rejected):
+        </label>
+        <textarea id="workflow-rejectedMessage" rows="4" required
+                  placeholder="Dear user, We are sorry but your solicitation of expense was rejected. Please read the reason below."
+                  ng-model="workflow.rejectedMessage" class="form-control">
+        </textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Workflow steps:</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table">
+        <tr>
+          <th width="20%">Order</th>
+          <th width="35%">Type</th>
+          <th width="35%">Type Object</th>
+          <th width="10%">Actions</th>
+        </tr>
+        <tr ng-repeat="step in workflowSteps">
+          <td>{{step.order}}</td>
+          <td><select ng-model="step.type" class="form-control"
+            ng-change="updateShowTypes($index)" required>
+            <option value="position">Position</option>
+            <option value="user">User</option>
+            <option value="role">Role</option>
+          </select></td>
+          <td><select ng-model="step.typeId" class="form-control" required>
+            <option ng-show="step.selectedPosition" ng-repeat="position in positions" 
+              value="{{position.id}}">{{position.name}}</option>
+            <option ng-show="step.selectedUser" ng-repeat="user in users" 
+              value="{{user.id}}">{{user.username}}</option>
+            <option ng-show="step.selectedRole" ng-repeat="role in roles" 
+              value="{{role.id}}">{{role.name}}</option>
+          </select></td>
+          <td><a href="#{{$index}}" ng-click="removeItem($index)"><i class="fa fa-trash-o"></i></a></td>
+        </tr>
+      </table>
+      <a href="#" class="btn btn-default" ng-click="addItem()">Add step</a>
+      <hr/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <input type="submit" value="Create Workflow" class="btn btn-warning" />
+    </div>
+  </div>
+</form>
+
+
