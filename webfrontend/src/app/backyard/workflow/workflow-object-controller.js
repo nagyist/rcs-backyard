@@ -11,8 +11,8 @@
         // Initialize data
         $scope.workflowSteps = [{selectedPosition: true, order: 1}];
         $scope.workflowSteps.sort(function(a, b) { 
-		    return b.order - a.order;
-		})
+		      return b.order - a.order;
+		    });
         $scope.workflow = {};
         $scope.user = CurrentUser.user();
         $scope.positions = [];

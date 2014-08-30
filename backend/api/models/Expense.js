@@ -83,6 +83,23 @@ module.exports = {
     }
 
     return true;
+  },
+
+  // Lifecycle Callbacks
+  afterCreate: function (newRecord, cb) {
+
+    // workflow engine: trigger workflow
+    sails.models['employee'].findOne(newRecord.employee)
+      .populate('user')
+      .exec(function (err,res) {
+        if(!err) {
+          var initiator = res.user;
+          sails.services['workflow'].trigger(newRecord, initiator);
+        }
+      })
+    
+    cb();
+
   }
 
 };

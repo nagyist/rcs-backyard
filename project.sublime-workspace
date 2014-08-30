@@ -1,0 +1,500 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"test",
+				"teste2"
+			],
+			[
+				"passw",
+				"passwordRetype"
+			],
+			[
+				"workflow",
+				"workflowInstanceId"
+			],
+			[
+				"current",
+				"currentStep"
+			],
+			[
+				"approv",
+				"approvedMessage"
+			],
+			[
+				"messa",
+				"startMessage"
+			],
+			[
+				"work",
+				"workflowInstance"
+			],
+			[
+				"app",
+				"approverMessage"
+			],
+			[
+				"ng",
+				"ng-change	AngularJS"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"evernote",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"removepa",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 210.0,
+		"history":
+		[
+			"ok",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Leonardo Ribeiro/AppData/Roaming/Sublime Text 3/Packages/User/JavascriptBeautify.sublime-settings",
+		"/C/Users/Leonardo Ribeiro/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/projects/rcsBackyard/backend/api/controllers/EmployeeController.js",
+		"/C/projects/rcsBackyard/backend/.jshintrc",
+		"/C/projects/rcsBackyard/backend/api/models/Employee.js",
+		"/C/Users/Leonardo Ribeiro/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/projects/rcsBackyard/README.md",
+		"/C/projects/rcsBackyard/webfrontend/src/app/backyard/adm/employees/employee.html",
+		"/C/projects/rcsBackyard/webfrontend/src/app/backyard/adm/employees/employees.html",
+		"/C/projects/rcsBackyard/webfrontend/src/app/backyard/adm/employees/employees.js",
+		"/C/Users/Leonardo Ribeiro/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Leonardo Ribeiro/AppData/Roaming/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/C/projects/rcsBackyard/license.md",
+		"/C/projects/rcsBackyard/backend/api/models/User.js",
+		"/C/projects/rcsBackyard/webfrontend/src/app/system/password/password-controller.js",
+		"/C/Users/Leonardo Ribeiro/AppData/Roaming/Sublime Text 3/Packages/Javascript Beautify/JavascriptBeautify.sublime-settings",
+		"/C/projects/rcsBackyard/backend/api/models/test.js",
+		"/C/projects/rcsBackyard/webfrontend/.jshintrc",
+		"/C/Users/Leonardo Ribeiro/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/projects/rcsBackyard/webfrontend/src/app/backyard/tools/tools-controller.js",
+		"/C/projects/rcsBackyard/backend/config/routes.js",
+		"/C/projects/rcsBackyard/backend/test/fixtures/User.json",
+		"/C/projects/rcsBackyard/backend/api/controllers/UserController.js",
+		"/C/projects/rcsBackyard/backend/api/models/UserLogin.js",
+		"/C/Users/Leonardo Ribeiro/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+		"/C/projects/rcsBackyard/backend/api/services/Workflow.js",
+		"/C/Users/Leonardo Ribeiro/AppData/Roaming/Sublime Text 3/Packages/Alignment/Default (Windows).sublime-keymap",
+		"/C/projects/rcsBackyard/webfrontend/src/app/app.js",
+		"/C/Users/Leonardo Ribeiro/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/projects/rcsBackyard/project.sublime-project",
+		"/C/Users/Leonardo Ribeiro/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript.sublime-settings",
+		"/C/Users/Leonardo Ribeiro/AppData/Roaming/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/C/projects/rcsBackyard/backend/api/models/Workflow.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/lodash/dist/lodash.compat.min.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/lodash/dist/lodash.underscore.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/lodash/dist/lodash.min.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/lodash/dist/lodash.compat.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/docs/partials/api/ngsails.html",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/docs/partials/api/ngsails.$sailsSocketBackend.html",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/docs/partials/api/ngsails.$sailsSocket.html",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/lodash/dist/lodash.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/bootstrap/less/modals.less",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/bootstrap/js/modal.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/noty/demo/usingWithModal.html",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/bootstrap/grunt/bs-glyphicons-data-generator.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/jquery/src/ajax/load.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/docs/font/FontAwesome.otf",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/docs/css/font-awesome.css",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/docs/js/angular-bootstrap-prettify.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/docs/js/angular.min.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/docs/js/angular-bootstrap.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/docs/css/animations.css",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/example/assets/js/vendor/lodash/dist/lodash.underscore.min.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/example/assets/js/vendor/lodash/dist/lodash.compat.min.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/example/assets/js/vendor/lodash/dist/lodash.underscore.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/example/assets/js/vendor/lodash/dist/lodash.min.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/example/assets/js/vendor/lodash/dist/lodash.compat.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/example/assets/js/vendor/lodash/dist/lodash.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/example/assets/js/lodash.min.js",
+		"/C/projects/rcsBackyard/webfrontend/src/app/styles/modal.scss",
+		"/C/projects/rcsBackyard/webfrontend/.tmp/css/styles/modal.css",
+		"/C/projects/rcsBackyard/webfrontend/src/app/angular/Components/LoDash.js",
+		"/C/projects/rcsBackyard/webfrontend/bower_components/angularSails/example/assets/js/rawSocketDemo.js",
+		"/C/projects/rcsBackyard/backend/config/sockets.js",
+		"/C/projects/rcsBackyard/backend/config/session.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/bower/node_modules/bower-config/node_modules/optimist/test/dash.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/bower/node_modules/mout/src/object/bindAll.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/sails/node_modules/sails-util/node_modules/optimist/test/dash.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/sails/lib/hooks/orm/lookup-datastore.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/bower/node_modules/mout/object/bindAll.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/bower/node_modules/stringify-object/stringify-object.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/grunt/node_modules/colors/themes/winston-dark.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-coffee/node_modules/lodash/dist/lodash.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-jst/node_modules/lodash/dist/lodash.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-less/node_modules/lodash/dist/lodash.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/sails/node_modules/lodash/dist/lodash.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/sails-disk/node_modules/lodash/dist/lodash.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/sails-disk/node_modules/waterline-criteria/lib/X_ISO_DATE.constant.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt/node_modules/lodash/lodash.underscore.min.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/grunt/node_modules/lodash/lodash.underscore.min.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/sails/node_modules/prompt/examples/override-validation.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-coffee/node_modules/lodash/dist/lodash.compat.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-coffee/node_modules/lodash/dist/lodash.min.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-coffee/node_modules/lodash/dist/lodash.underscore.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-jst/node_modules/lodash/dist/lodash.compat.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-jst/node_modules/lodash/dist/lodash.min.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-jst/node_modules/lodash/dist/lodash.underscore.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-less/node_modules/lodash/dist/lodash.compat.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/sails/node_modules/colors/themes/winston-dark.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt/node_modules/colors/themes/winston-dark.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/grunt/node_modules/lodash/lodash.underscore.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/grunt/node_modules/lodash/lodash.min.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt/node_modules/lodash/lodash.underscore.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt/node_modules/lodash/lodash.min.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/lodash/dist/lodash.underscore.min.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/lodash/dist/lodash.compat.min.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/grunt/node_modules/lodash/lodash.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/sails-disk/node_modules/lodash/lodash.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/sails/node_modules/lodash/lodash.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-less/node_modules/lodash/lodash.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-less/node_modules/less/test/less/import/deeper/import-once-test-a.less",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-jst/node_modules/lodash/lodash.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt-contrib-coffee/node_modules/lodash/lodash.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/grunt/node_modules/lodash/lodash.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/optimist/example/default_singles.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/optimist/example/default_hash.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/assets/linker/vendor/moment-timezone-data.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/lodash/dist/lodash.underscore.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/lodash/dist/lodash.min.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/lodash/dist/lodash.compat.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/lodash/dist/lodash.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/assets/linker/styles/modal.css",
+		"/C/projects/rcsBackyard/stuff/Taskboard/api/policies/hasCommentObjectAdmin.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/lodash/lodash.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/api/policies/hasLinkObjectAdmin.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/chai/lib/chai/utils/objDisplay.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/bower/node_modules/bower-registry-client/node_modules/bower-config/node_modules/optimist/node_modules/minimist/test/dash.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/bower/node_modules/bower-registry-client/node_modules/bower-config/node_modules/mout/object/bindAll.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/sails/node_modules/merge-defaults/test/dont-merge-arrays.test.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/bower/node_modules/bower-registry-client/node_modules/bower-config/node_modules/mout/src/object/bindAll.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/bower/node_modules/bower-config/node_modules/optimist/node_modules/minimist/test/dash.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/bower/node_modules/bower-registry-client/node_modules/bower-config/node_modules/optimist/test/dash.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/sails/node_modules/sails-util/node_modules/optimist/node_modules/minimist/test/dash.js",
+		"/C/projects/rcsBackyard/stuff/Taskboard/node_modules/bower/node_modules/decompress-zip/download-test-assets.js",
+		"/C/projects/rcsBackyard/stuff/newApp/node_modules/sails/lib/hooks/orm/backwards-compatibility/upgrade-datastore.js",
+		"/C/projects/rcsBackyard/backend/api/services/Token.js",
+		"/C/projects/rcsBackyard/webfrontend/src/app/backyard/adm/employees/employee-form.html",
+		"/C/projects/rcsBackyard/webfrontend/src/app/backyard/adm/employees/employee-form-controller.js"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			"C:\\projects\\rcsBackyard\\backend\\",
+			"C:\\projects\\rcsBackyard\\backend\\api"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"theme",
+			" ",
+			" =",
+			"var",
+			"employee",
+			"res",
+			"ctrl+k",
+			"teste",
+			"var",
+			"var ",
+			"var",
+			"alert",
+			"var",
+			"currentStep",
+			"\\\\n",
+			"this.",
+			"this",
+			"sails.models",
+			"find(",
+			"find",
+			"res1",
+			"createdAt\n",
+			">\n",
+			"pass"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\n",
+			"workflow."
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"emploe",
+				"backend\\api\\models\\Employee.js"
+			],
+			[
+				"employee",
+				"backend\\api\\controllers\\EmployeeController.js"
+			],
+			[
+				"emplo",
+				"backend\\api\\models\\Employee.js"
+			],
+			[
+				"",
+				"license.md"
+			],
+			[
+				"test",
+				"backend\\api\\models\\test.js"
+			],
+			[
+				"test.js",
+				"backend\\api\\models\\test.js"
+			],
+			[
+				"user",
+				"backend\\api\\models\\User.js"
+			],
+			[
+				"workflow",
+				"backend\\api\\services\\Workflow.js"
+			],
+			[
+				"employees",
+				"webfrontend\\src\\app\\backyard\\adm\\employees\\employees.html"
+			],
+			[
+				"app",
+				"webfrontend\\src\\app\\app.js"
+			],
+			[
+				"expenses.",
+				"webfrontend\\src\\app\\backyard\\adm\\expenses\\expenses.html"
+			],
+			[
+				"workflows.",
+				"webfrontend\\src\\app\\backyard\\workflow\\workflows.html"
+			],
+			[
+				"workflow-objec",
+				"webfrontend\\src\\app\\backyard\\workflow\\workflow-object-controller.js"
+			],
+			[
+				"head.html",
+				"webfrontend\\src\\app\\partials\\Directives\\NavigationHeader\\header.html"
+			],
+			[
+				"dataservice",
+				"webfrontend\\src\\app\\angular\\Services\\DataService.js"
+			],
+			[
+				"app.js",
+				"webfrontend\\src\\app\\app.js"
+			],
+			[
+				"expense",
+				"backend\\api\\models\\ExpenseItem.js"
+			],
+			[
+				"usercontr",
+				"backend\\api\\controllers\\UserController.js"
+			],
+			[
+				"dataserv",
+				"webfrontend\\src\\app\\angular\\Services\\DataService.js"
+			],
+			[
+				"expense-co",
+				"webfrontend\\src\\app\\backyard\\adm\\expenses\\expense-controller.js"
+			],
+			[
+				"tools",
+				"webfrontend\\src\\app\\backyard\\tools\\tools-controller.js"
+			],
+			[
+				"passport",
+				"backend\\api\\models\\Passport.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 269.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

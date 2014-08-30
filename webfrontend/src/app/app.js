@@ -196,6 +196,11 @@
             templateUrl: '/frontend/backyard/adm/employees/employees.html',
             controller: 'EmployeesController'
           })
+          .state('backyard.adm.employeeForm', {
+            url: '/employee/form/:id',
+            templateUrl: '/frontend/backyard/adm/employees/employee-form.html',
+            controller: 'EmployeeFormController'
+          })
           .state('backyard.adm.employee', {
             url: '/employee/:id',
             templateUrl: '/frontend/backyard/adm/employees/employee.html',

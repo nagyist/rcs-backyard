@@ -25,7 +25,9 @@
                         {title: 'Name', column: 'name'},
                         {title: 'Region', column: false},
                         {title: 'Position', column: false},
-                        {title: 'Admission Date', column: 'admissionDate', 'class': 'text-right'}
+                        {title: 'Admission Date', column: 'admissionDate'},
+                        {title: 'Actions', column: false,
+                            'class': 'text-right'}
                     ];
 
                     // Initialize default sort data

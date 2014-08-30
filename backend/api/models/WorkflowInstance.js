@@ -16,6 +16,10 @@ module.exports = {
       type:       'string',
       required:   true
     },
+    modelId: {
+      type: 'integer',
+      required: true,
+    },
     // text for start message to initiator
     startMessage: {
       type:       'text',
@@ -36,22 +40,29 @@ module.exports = {
       type:       'text',
       required:   true
     },
-    // status that trigger the workflow
-    triggerStatus: {
-      type:       'text',
-      required:   true
-    },
-    // if checked will send workflow for every model that has the triggerStatus
-    isActivated: {
-      type:       'boolean',
-      required:   false
+    status: {
+      type: 'string',
+      required: true,
+      enum: ['started', 'finished', 'canceled']
     },
 
-    // workflow steps
-    steps: {
-      collection: 'workflowstep',
-      via: 'workflow'
+    // workflow object id
+    workflow: {
+      model: 'Workflow',
+      required: true
     },
+
+    // initiator of the wf
+    initiator: {
+      model: 'User',
+      required: true
+    },
+
+    items: {
+      collection: 'workflowinstanceitem',
+      via: 'workflowInstance'
+    }
+    
   },
 
   // Validate all objects
@@ -85,6 +96,14 @@ module.exports = {
 
       if (!item.rejectedMessage) {
         return new Error('Rejected message is obligatory');
+      }
+
+      if (!item.workflow) {
+        return new Error('Workflow id is obligatory');
+      }
+
+      if (!item.initiator) {
+        return new Error('Initiator is null');
       }
     }
 

@@ -14,6 +14,11 @@ module.exports = {
         name: {
             type:       'string',
             required:   true
+        },
+
+        employees: {
+        	collection: 'employee',
+        	via: 'position'
         }
     }
 };

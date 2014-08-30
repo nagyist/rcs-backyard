@@ -86,6 +86,32 @@ var Passport = {
         }
     },
 
+    // Validate object
+    isValid: function(object) {
+      var items;
+
+      if (object instanceof Array) {
+        items = object;
+      } else {
+        items = [];
+        items.push(object);
+      }
+
+      for (var i = 0; i < items.length; i++) {
+        var item = items[i];
+        if (!item.protocol) {
+          return new Error('Protocol is obligatory');
+        }
+
+        if (!item.password ||
+            item.password.length < this.attributes.minLength) {
+          return new Error('Invalid password. The min length is 6.');
+        }
+      }
+
+      return true;
+    },
+
     /**
      * Callback to be run before creating a Passport.
      *

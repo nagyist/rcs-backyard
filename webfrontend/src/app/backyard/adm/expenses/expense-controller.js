@@ -19,12 +19,6 @@
         $scope.activeTab = 'backyard.adm.expenses';
         $scope.user = CurrentUser.user();
 
-        $scope.openDate = function($event) {
-          $event.preventDefault();
-          $event.stopPropagation();
-          $scope.dateOpened = true;
-        };
-
         $scope.sum = function(list) {
           var total=0;
           angular.forEach(list , function(item){

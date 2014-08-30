@@ -11,7 +11,6 @@ var _ = require('lodash');
 module.exports = _.merge(_.cloneDeep(require('../base/controller')), {
 
   create: function(request, response) {
-    var count = 0;
     var workflow = request.param('workflow');
     var steps = request.param('steps');
     var valid = true;
